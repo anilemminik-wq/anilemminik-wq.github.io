@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahjong Quest: Dragon Tales – Emminik Games</title>
+<meta name="description" content="Orta çağ masalında taş Mahjong eşleştir. 200 bölüm, süre yok, her düzen çözülebilir. / Match stone Mahjong tiles through a medieval storybook. 200 levels, no timer.">
+<meta property="og:title" content="Mahjong Quest: Dragon Tales">
+<meta property="og:description" content="Match stone tiles, wake the last dragon. 200 levels, no timer.">
+<meta property="og:image" content="https://anilemminik-wq.github.io/mahjongquest/img/hero.webp">
+<link rel="icon" href="img/icon.png">
+<style>
+:root{--bg:#1a0c0c;--bg2:#251111;--ink:#f3e6cf;--mut:#c4ad92;--gold:#e2b551;--red:#b3262e;--line:#4a2b22}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+img{max-width:100%;height:auto;display:block}
+.w{max-width:1000px;margin:0 auto}
+h1,h2,h3,.lbl{font-family:"Cinzel","Trajan Pro",Georgia,serif;letter-spacing:.04em}
+h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.1;margin:.3em 0;color:var(--gold)}
+h2{font-size:1.5rem;color:var(--gold);margin:0 0 .5em;text-wrap:balance}
+a{color:var(--gold)}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:12px;flex-wrap:wrap}
+header .lang a{margin-left:12px;text-decoration:none;border-bottom:1px solid var(--line)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;padding:12px 0 40px}
+.hero img.h{border-radius:14px;box-shadow:0 18px 50px #000a;border:1px solid var(--line)}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;background:var(--gold);color:#2a1305;font-weight:700;text-decoration:none;margin:6px 8px 6px 0}
+.btn.o{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.soon{color:var(--mut);font-size:.95rem}
+section{padding:36px 0;border-top:1px solid var(--line)}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:0;padding:0;list-style:none}
+.feat li{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px}
+.feat b{display:block;color:var(--gold);font-family:"Cinzel",Georgia,serif;margin-bottom:4px}
+.shots{display:flex;gap:14px;overflow-x:auto;padding-bottom:12px;scroll-snap-type:x mandatory}
+.shots img{height:min(560px,70vh);width:auto;border-radius:14px;border:1px solid var(--line);scroll-snap-align:start;flex:none}
+.story{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.story img{border-radius:8px;border:1px solid var(--line)}
+.regions{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}
+.regions li{padding:6px 14px;border:1px solid var(--line);border-radius:99px;background:var(--bg2)}
+footer{padding:28px 0 48px;color:var(--mut);font-size:.95rem;border-top:1px solid var(--line)}
+.en{display:none}
+body.en-on .tr{display:none}body.en-on .en{display:block}
+body.en-on span.en,body.en-on a.en{display:inline}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="w">
+<header>
+  <strong class="lbl">EMMINIK GAMES</strong>
+  <span class="lang"><a href="#" id="t">Türkçe</a><a href="#" id="e">English</a></span>
+</header>
+
+<div class="hero">
+  <div>
+    <img class="h" src="img/hero.webp" width="1024" height="500" alt="Mahjong Quest: Dragon Tales">
+  </div>
+  <div>
+    <h1>Mahjong Quest<br><small style="font-size:.5em">Dragon Tales</small></h1>
+    <p class="tr">Orta çağ krallığının sekiz diyarında yol al, oyulmuş taş Mahjong levhalarını eşleştirerek son ejder <b>Ignar</b>'ı uyandır.</p>
+    <p class="en">Journey through eight lands of a medieval kingdom and wake <b>Ignar</b>, the last dragon, by matching carved stone Mahjong tiles.</p>
+    <p><span class="btn">Google Play</span> <a class="btn o" href="privacy/"><span class="tr">Gizlilik</span><span class="en">Privacy</span></a></p>
+    <p class="soon"><span class="tr">Google Play'de çok yakında · Android · Ücretsiz</span><span class="en">Coming soon to Google Play · Android · Free</span></p>
+  </div>
+</div>
+
+<section>
+  <h2 class="tr">Oyun</h2><h2 class="en">The game</h2>
+  <ul class="feat">
+    <li class="tr"><b>200 bölüm, 3 kademe</b>Kolay, Orta ve Zor. Kademe geçince oyun sana haber verir.</li>
+    <li class="en"><b>200 levels, 3 stages</b>Easy, Medium and Hard. The game tells you when you move up.</li>
+    <li class="tr"><b>Süre yok</b>Her düzen çözülebilir üretilir. Rahatça düşün.</li>
+    <li class="en"><b>No timer</b>Every layout is generated solvable. Take your time.</li>
+    <li class="tr"><b>Kombo ve yıldız</b>Hızlı eşleştir, bölüm başına üç yıldıza kadar kazan.</li>
+    <li class="en"><b>Combos and stars</b>Match fast and earn up to three stars per level.</li>
+    <li class="tr"><b>Yardımcılar</b>İpucu, Karıştır, Geri Al ve nadir Ejder Nefesi.</li>
+    <li class="en"><b>Helpers</b>Hint, Shuffle, Undo and the rare Dragon Breath.</li>
+    <li class="tr"><b>Günlük bulmaca</b>Takvim ve aylık rozet. Altınla taş dokuları ve masa arka planları aç.</li>
+    <li class="en"><b>Daily puzzle</b>Calendar and monthly badge. Unlock stone styles and table backgrounds with gold.</li>
+    <li class="tr"><b>Ücretsiz</b>Reklamlar tek seferlik satın almayla kalkar. Hesap gerekmez.</li>
+    <li class="en"><b>Free to play</b>Remove ads with a one-time purchase. No account needed.</li>
+  </ul>
+</section>
+
+<section>
+  <h2 class="tr">Ekran görüntüleri</h2><h2 class="en">Screenshots</h2>
+  <div class="shots">
+    <img src="img/menu.webp" width="540" height="1080" alt="Menu" loading="lazy">
+    <img src="img/map.webp" width="540" height="1080" alt="Map" loading="lazy">
+    <img src="img/story.webp" width="540" height="1080" alt="Story" loading="lazy">
+    <img src="img/l1.webp" width="540" height="1080" alt="Level 1" loading="lazy">
+    <img src="img/l125.webp" width="540" height="1080" alt="Level 125" loading="lazy">
+    <img src="img/l200.webp" width="540" height="1080" alt="Level 200" loading="lazy">
+    <img src="img/cal.webp" width="540" height="1080" alt="Calendar" loading="lazy">
+    <img src="img/shop.webp" width="540" height="1080" alt="Shop" loading="lazy">
+  </div>
+</section>
+
+<section>
+  <h2 class="tr">Mürekkeple çizilmiş bir hikâye</h2><h2 class="en">A story drawn in ink</h2>
+  <p class="tr">Genç şövalye Aren, kraliyet büyücüsü Maelis ve yaşlı ejder Ignar. Her bölgede hikâyeden bir sayfa açılır.</p>
+  <p class="en">Aren the young knight, Maelis the royal wizard and Ignar the old dragon. Each region opens a new page of the tale.</p>
+  <div class="story">
+    <img src="img/st00.webp" width="720" height="480" alt="" loading="lazy">
+    <img src="img/st05.webp" width="720" height="480" alt="" loading="lazy">
+    <img src="img/st16.webp" width="720" height="480" alt="" loading="lazy">
+    <img src="img/st22.webp" width="720" height="480" alt="" loading="lazy">
+    <img src="img/st24.webp" width="720" height="480" alt="" loading="lazy">
+  </div>
+</section>
+
+<section>
+  <h2 class="tr">Sekiz diyar</h2><h2 class="en">Eight lands</h2>
+  <ul class="regions">
+    <li><span class="tr">Köy</span><span class="en">Village</span></li>
+    <li><span class="tr">Kale</span><span class="en">Castle</span></li>
+    <li><span class="tr">Kara Orman</span><span class="en">Dark Forest</span></li>
+    <li><span class="tr">Dağ Geçidi</span><span class="en">Mountain Pass</span></li>
+    <li><span class="tr">Büyücü Kulesi</span><span class="en">Wizard Tower</span></li>
+    <li><span class="tr">Buzul Kalesi</span><span class="en">Glacier Keep</span></li>
+    <li><span class="tr">Yıkık Tapınak</span><span class="en">Ruined Temple</span></li>
+    <li><span class="tr">Ejder İni</span><span class="en">Dragon's Lair</span></li>
+  </ul>
+  <p class="tr">Her diyarın kendi taş seti var. Her sette dörder farklı taşlık iki grup (Armalar, Mühürler gibi) kendi içinde serbestçe eşleşir.</p>
+  <p class="en">Every land has its own tile set. In each set, two groups of four different tiles (like Coats of Arms or Seals) match each other freely.</p>
+</section>
+
+<footer>
+  <p>© 2026 Emminik Games · <a href="mailto:emminikgames@gmail.com">emminikgames@gmail.com</a> · <a href="privacy/"><span class="tr">Gizlilik Politikası</span><span class="en">Privacy Policy</span></a></p>
+</footer>
+</div>
+<script>
+(function(){
+  function set(en){document.body.classList.toggle('en-on',en);document.documentElement.lang=en?'en':'tr';try{localStorage.setItem('mqlang',en?'en':'tr')}catch(x){}}
+  var s=null;try{s=localStorage.getItem('mqlang')}catch(x){}
+  set(s?s==='en':!/^tr/i.test(navigator.language||'tr'));
+  document.getElementById('t').onclick=function(e){e.preventDefault();set(false)};
+  document.getElementById('e').onclick=function(e){e.preventDefault();set(true)};
+})();
+</script>
+</body>
+</html>
